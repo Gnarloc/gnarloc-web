@@ -6,8 +6,8 @@ if (filter_var($_REQUEST['contact_email'], FILTER_VALIDATE_EMAIL)):
   $subject = 'New Email from GnarLock Web Contact Form'; // Subject of your email
 
   // Receiver email address
-  $to = 'info@gnarloc.com';  //send-to GnarLoc info email
- 
+  $to = 'info@gnarloc.com';  //send-to gnarloc info email address
+
 
   // prepare header
   $header = 'From: '. $_REQUEST['first_name'] . " " .$_REQUEST['last_name'] . ' <'. $_REQUEST['contact_email'] .'>'. "\r\n";
